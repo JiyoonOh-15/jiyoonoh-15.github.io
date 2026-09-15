@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jiyoon Oh | 오지윤</title>
+<meta name="description" content="Jiyoon Oh, economist at Sejong University. Research on housing markets, macroeconomics, and firm dynamics in Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{
+    --paper:#FCFCFA;
+    --ink:#1D2830;
+    --muted:#5D6A72;
+    --pine:#2E5A4F;
+    --rule:#DCE2E0;
+    --wash:#EEF3F1;
+    --serif:"Newsreader", "Noto Serif KR", Georgia, serif;
+    --sans:"Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+       font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--pine);text-underline-offset:3px;text-decoration-thickness:1px}
+  a:hover{text-decoration-thickness:2px}
+  :focus-visible{outline:2px solid var(--pine);outline-offset:3px;border-radius:2px}
+
+  /* language switching */
+  html[data-lang="en"] [lang="ko"]:not(html){display:none}
+  html[data-lang="ko"] [lang="en"]:not(html){display:none}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;display:grid;
+        grid-template-columns:300px 1fr;gap:72px}
+
+  /* left column */
+  aside{position:sticky;top:0;align-self:start;padding:72px 0 40px}
+  .name{font-family:var(--serif);font-weight:500;font-size:46px;line-height:1.02;
+        letter-spacing:-0.015em;margin:0}
+  .name-alt{font-size:19px;color:var(--muted);margin:10px 0 0;letter-spacing:.02em}
+  .role{margin:26px 0 0;font-size:15px;line-height:1.55}
+  .role strong{font-weight:600;display:block}
+  .contact{margin:20px 0 0;font-size:15px}
+  nav{margin:36px 0 0;border-top:1px solid var(--rule);padding-top:18px}
+  nav ul{list-style:none;margin:0;padding:0}
+  nav li{margin:0 0 6px}
+  nav a{color:var(--ink);text-decoration:none;font-size:15px}
+  nav a:hover{color:var(--pine)}
+  .lang{margin-top:28px;display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:3px}
+  .lang button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--muted);
+               padding:4px 12px;border-radius:999px;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--pine);color:#fff}
+
+  /* main column */
+  main{padding:72px 0 96px;min-width:0}
+  section{margin:0 0 64px}
+  h2{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.2;margin:0 0 22px;
+     padding-bottom:10px;border-bottom:1px solid var(--rule)}
+  h3{font-family:var(--sans);font-weight:600;font-size:15px;color:var(--pine);
+     margin:36px 0 14px}
+  .about p{font-family:var(--serif);font-size:21px;line-height:1.55;margin:0 0 16px;max-width:36em}
+  html[data-lang="ko"] .about p{font-family:var(--sans);font-size:18px;line-height:1.8}
+  .fields{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+  .fields li{background:var(--wash);color:var(--pine);font-size:14px;padding:4px 12px;border-radius:4px}
+
+  /* entries with a year gutter */
+  .list{list-style:none;margin:0;padding:0}
+  .list li{display:grid;grid-template-columns:92px 1fr;gap:20px;padding:12px 0;
+           border-bottom:1px solid var(--rule)}
+  .list li:last-child{border-bottom:0}
+  .yr{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums;padding-top:2px}
+  .title{font-weight:600;line-height:1.5}
+  .meta{color:var(--muted);font-size:15px;margin-top:2px}
+  .meta em{font-style:italic}
+
+  .wip li{grid-template-columns:1fr}
+  .wip .status{display:inline-block;font-size:13px;color:var(--pine);margin-top:4px}
+
+  .title a{color:var(--ink);text-decoration-color:var(--rule)}
+  .title a:hover{color:var(--pine);text-decoration-color:var(--pine)}
+  .more{margin:18px 0 0;font-size:15px}
+  footer{color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:18px}
+
+  @media (max-width: 860px){
+    .wrap{grid-template-columns:1fr;gap:0}
+    aside{position:static;padding:48px 0 8px}
+    .name{font-size:40px}
+    nav{display:none}
+    main{padding-top:32px}
+    .about p{font-size:19px}
+    .list li{grid-template-columns:1fr;gap:2px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<aside>
+  <h1 class="name">Jiyoon Oh</h1>
+  <p class="name-alt">오지윤</p>
+
+  <p class="role">
+    <span lang="en"><strong>Associate Professor of Economics</strong>Sejong University</span>
+    <span lang="ko"><strong>세종대학교 경제학과 부교수</strong>Sejong University</span>
+  </p>
+
+  <p class="contact"><a href="mailto:oh.jiyoon@gmail.com">oh.jiyoon@gmail.com</a></p>
+
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#research"><span lang="en">Research</span><span lang="ko">연구</span></a></li>
+      <li><a href="#wip"><span lang="en">Work in progress</span><span lang="ko">진행 중인 연구</span></a></li>
+      <li><a href="#columns"><span lang="en">Columns and media</span><span lang="ko">칼럼과 미디어</span></a></li>
+      <li><a href="#policy"><span lang="en">Policy and service</span><span lang="ko">정책 자문</span></a></li>
+      <li><a href="#cv"><span lang="en">Experience and education</span><span lang="ko">경력과 학력</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-set="en" aria-pressed="true">English</button>
+    <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+  </div>
+</aside>
+
+<main>
+
+<section class="about" id="about">
+  <p lang="en">I am an economist working on housing markets, macroeconomics, and firm dynamics in Korea. Before joining Sejong University, I spent a decade at the Korea Development Institute, where I led the real estate research team, and worked at the Bank of Korea.</p>
+  <p lang="en">My current research asks how credit constraints and regulation shape housing markets, why Korea's labor share has risen, and how firms respond to large macroeconomic shocks. I also write a regular column for Maeil Business Newspaper.</p>
+  <p lang="ko">부동산시장, 거시경제, 기업동학을 연구합니다. 세종대학교에 오기 전 한국개발연구원(KDI)에서 10여 년간 연구위원으로 일하며 부동산연구팀을 이끌었고, 그 전에는 한국은행에서 근무했습니다.</p>
+  <p lang="ko">신용 제약과 규제가 주택시장에 미치는 영향, 한국 노동소득분배율 상승의 원인, 대규모 거시 충격에 대한 기업의 대응을 주로 연구하며, 매일경제에 정기 칼럼을 쓰고 있습니다.</p>
+  <ul class="fields">
+    <li><span lang="en">Housing markets</span><span lang="ko">부동산시장</span></li>
+    <li><span lang="en">Macroprudential policy</span><span lang="ko">거시건전성 정책</span></li>
+    <li><span lang="en">Labor share</span><span lang="ko">노동소득분배율</span></li>
+    <li><span lang="en">Firm dynamics</span><span lang="ko">기업동학</span></li>
+    <li><span lang="en">Misallocation</span><span lang="ko">자원배분 효율성</span></li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2><span lang="en">Research</span><span lang="ko">연구</span></h2>
+
+  <h3><span lang="en">Publications</span><span lang="ko">학술 논문</span></h3>
+  <ul class="list">
+    <li><span class="yr">2026</span><div><div class="title">Credit Constraints and the Temporal Dynamics of the Housing Market: Evidence from Korea's High-Value Mortgage Ban</div><div class="meta"><em>Finance Research Letters</em>, 102, 110115</div></div></li>
+    <li><span class="yr">2025</span><div><div class="title">The Micro-Level Anatomy of Korea's Rising Labor Share</div><div class="meta"><em>The Korean Economic Review</em>, 41(1), 175–210</div></div></li>
+    <li><span class="yr">2024</span><div><div class="title">신규 임대료 지수로 살펴본 한국의 주거비 추이</div><div class="meta">응용경제, 26(2), 5–31</div></div></li>
+    <li><span class="yr">2023</span><div><div class="title">전세가격의 비용화와 소비자물가지수: 소비자물가지수 자가주거비 반영을 중심으로</div><div class="meta"><em>KDI Journal of Economic Policy</em>, 45(4), 57–77</div></div></li>
+    <li><span class="yr">2023</span><div><div class="title">기업의 다변화 정도에 따른 경기변동 대응성</div><div class="meta">경제학연구, 71(3), 75–102</div></div></li>
+    <li><span class="yr">2022</span><div><div class="title">정부의 국유지 매각 효율성 분석</div><div class="meta">경제학연구, 70(1), 89–111</div></div></li>
+    <li><span class="yr">2022</span><div><div class="title">우리나라 공공택지정책의 한계</div><div class="meta">한국경제포럼, 14(4), 87–114</div></div></li>
+    <li><span class="yr">2020</span><div><div class="title">한국경제 수요 측면에서의 상품 다양성 증가</div><div class="meta">응용경제, 22(3), 85–114</div></div></li>
+    <li><span class="yr">2018</span><div><div class="title">한국의 주택건설투자의 결정요인 분석</div><div class="meta">경제분석, 24(4), 71–100</div></div></li>
+    <li><span class="yr">2017</span><div><div class="title">Misallocation and Manufacturing TFP in Korea, 1982–2007</div><div class="meta">with M. Kim and Y. Shin. <em>Federal Reserve Bank of St. Louis Review</em>, 99(2), 233–244</div></div></li>
+    <li><span class="yr">2016</span><div><div class="title">Misallocation and Manufacturing TFP in Korea</div><div class="meta"><em>KDI Journal of Economic Policy</em>, 38(3), 37–52</div></div></li>
+  </ul>
+
+  <h3><span lang="en">Book chapters</span><span lang="ko">저서</span></h3>
+  <ul class="list">
+    <li><span class="yr">2020</span><div><div class="title">Change in Labor Income Share in Korea: Findings from Firm-Level Data</div><div class="meta">In <em>Growth in a Time of Change: Global and Country Perspectives on a New Agenda</em>, Brookings Institution Press</div></div></li>
+    <li><span class="yr">2018</span><div><div class="title">Misallocation in the Manufacturing Sector of Korea: A Micro Data Analysis</div><div class="meta">In <em>Economic Stagnation in Japan: Exploring the Causes and Remedies of Japanization</em>, Edward Elgar Publishing</div></div></li>
+  </ul>
+</section>
+
+<section id="wip" class="wip-section">
+  <h2><span lang="en">Work in progress</span><span lang="ko">진행 중인 연구</span></h2>
+  <ul class="list wip">
+    <li><div><div class="title">Do Renewal Rent Caps Destabilize Market Rents?</div><div class="meta">with Seunghyup Lee</div><span class="status"><span lang="en">Draft forthcoming</span><span lang="ko">초고 곧 공개</span></span></div></li>
+    <li><div><div class="title">Export Exposure and Firm Resilience in a Currency Crisis</div></div></li>
+    <li><div><div class="title">Financial Regulatory Asymmetry and Sectoral Credit Reallocation</div><div class="meta">with Hyeondo Joo</div></div></li>
+    <li><div><div class="title">Workforce Aging, Seniority Pay, and the Corporate Labor Share in Korea</div><div class="meta">with Jiyeon Kim and Yoonsoo Park</div></div></li>
+    <li><div><div class="title">Valuing the Tenant Renewal Right in Korea's Jeonse Market</div></div></li>
+    <li><div><div class="title">Land Transaction Permits and Seoul Apartment Prices</div></div></li>
+    <li><div><div class="title">Spatial Regulation and Firm Growth: Evidence from Korea's Capital Region</div></div></li>
+    <li><div><div class="title">Corporate Land Purchases and Capital Misallocation in Korea and Japan</div></div></li>
+  </ul>
+</section>
+
+<section id="columns">
+  <h2><span lang="en">Columns and media</span><span lang="ko">칼럼과 미디어</span></h2>
+  <p class="meta" style="margin:0 0 8px"><span lang="en">I write regular opinion columns on the Korean economy, mostly in Korean, for Maeil Business Newspaper (MK Economist) and Bridge Economy.</span><span lang="ko">매경이코노미스트와 브릿지경제에 한국 경제에 관한 칼럼을 정기적으로 쓰고 있습니다.</span></p>
+
+  <h3><span lang="en">Selected columns</span><span lang="ko">주요 칼럼</span></h3>
+  <ul class="list">
+    <li><span class="yr">2026.05</span><div><div class="title"><a href="https://company.mbnmoney.co.kr/news/view?news_no=MM1005845035">K반도체 '두번의 천운'</a></div><div class="meta"><span lang="en">MK Economist, Maeil Business Newspaper</span><span lang="ko">매경이코노미스트, 매일경제</span></div></div></li>
+    <li><span class="yr">2026.01</span><div><div class="title"><a href="https://www.viva100.com/article/20260126500388">중산층 사다리는 어떻게 황금 엘리베이터가 됐나</a></div><div class="meta"><span lang="en">Bridge Column, Bridge Economy</span><span lang="ko">브릿지 칼럼, 브릿지경제</span></div></div></li>
+    <li><span class="yr">2026.01</span><div><div class="title"><a href="https://news.nate.com/view/20260121n32059">불안한 미래가 만든 원화값</a></div><div class="meta"><span lang="en">MK Economist, Maeil Business Newspaper</span><span lang="ko">매경이코노미스트, 매일경제</span></div></div></li>
+  </ul>
+  <p class="more"><a href="https://search.naver.com/search.naver?where=news&amp;query=%EC%98%A4%EC%A7%80%EC%9A%B4+%EB%AA%85%EC%A7%80%EB%8C%80"><span lang="en">Find more columns on Naver News</span><span lang="ko">네이버 뉴스에서 칼럼 더 찾아보기</span></a></p>
+
+  <h3><span lang="en">Interviews and podcasts</span><span lang="ko">인터뷰와 팟캐스트</span></h3>
+  <ul class="list">
+    <li><span class="yr">2024.09</span><div><div class="title"><a href="https://economychosun.com/site/data/html_dir/2024/09/20/2024092000012.html">“금리 인하 영향, 先반영… 반포 신축 초강세, 토허제 풍선 효과”</a></div><div class="meta"><span lang="en">Interview, Economy Chosun</span><span lang="ko">인터뷰, 이코노미조선</span></div></div></li>
+    <li><span class="yr">2024.01</span><div><div class="title"><a href="https://www.podbbang.com/channels/1779839/episodes/24866704">『부동산과 정치』 서평: 차가운 이성을 기대하며</a></div><div class="meta"><span lang="en">Podcast, Review Discovery (Podbbang)</span><span lang="ko">팟캐스트, 리뷰의 발견 (팟빵)</span></div></div></li>
+  </ul>
+</section>
+
+<section id="policy">
+  <h2><span lang="en">Policy and service</span><span lang="ko">정책 자문 및 위원회</span></h2>
+  <ul class="list">
+    <li><span class="yr">2025–</span><div><span lang="en">Expert Member, Fiscal Program Evaluation Committee, Ministry of Economy and Finance</span><span lang="ko">기획재정부 재정사업평가위원회 전문위원</span></div></li>
+    <li><span class="yr">2023–</span><div><span lang="en">Budget Policy Advisory Member, National Assembly Budget Office</span><span lang="ko">국회예산정책처 예산정책 자문위원</span></div></li>
+    <li><span class="yr">2023–</span><div><span lang="en">Economic Advisory Group, The Seoul Institute</span><span lang="ko">서울연구원 경제자문단 자문위원</span></div></li>
+    <li><span class="yr">2023–2024</span><div><span lang="en">Policy Advisor, Land, Infrastructure and Transport Committee, People Power Party</span><span lang="ko">국민의힘 국토교통위원회 정책자문위원</span></div></li>
+    <li><span class="yr">2019–2021</span><div><span lang="en">Private Member, Livelihood Subcommittee, National Economic Advisory Council</span><span lang="ko">국민경제자문회의 민생분과 민간위원</span></div></li>
+    <li><span class="yr">2018–2022</span><div><span lang="en">Real Estate Service Industry Policy Committee and Early Warning System Steering Committee, Ministry of Land, Infrastructure and Transport</span><span lang="ko">국토교통부 부동산서비스산업 정책위원회 / 조기경보시스템 운영위원</span></div></li>
+  </ul>
+
+  <h3><span lang="en">Policy analysis</span><span lang="ko">현안분석 및 동향 집필</span></h3>
+  <ul class="list">
+    <li><span class="yr">2016–2023</span><div><span lang="en">Project manager, KDI Real Estate Market Trends: housing market monitoring and policy analysis</span><span lang="ko">KDI 부동산동향 PM: 부동산시장 모니터링 및 정책현안 분석</span></div></li>
+    <li><span class="yr">2013–2022</span><div><span lang="en">Contributor, KDI Economic Outlook</span><span lang="ko">KDI 경제동향 및 전망 집필</span></div></li>
+  </ul>
+</section>
+
+<section id="cv">
+  <h2><span lang="en">Experience and education</span><span lang="ko">경력과 학력</span></h2>
+
+  <h3><span lang="en">Experience</span><span lang="ko">경력</span></h3>
+  <ul class="list">
+    <li><span class="yr">2026–</span><div><span lang="en">Associate Professor, Department of Economics, Sejong University</span><span lang="ko">세종대학교 경제학과 부교수</span></div></li>
+    <li><span class="yr">2023–2026</span><div><span lang="en">Assistant Professor, Division of Business, Economics and Statistics, Myongji University</span><span lang="ko">명지대학교 경상통계학부 조교수</span></div></li>
+    <li><span class="yr">2022–2023</span><div><span lang="en">Head, Real Estate Research Team, Korea Development Institute</span><span lang="ko">한국개발연구원(KDI) 부동산연구팀 팀장</span></div></li>
+    <li><span class="yr">2012–2023</span><div><span lang="en">Research Fellow, Korea Development Institute</span><span lang="ko">한국개발연구원(KDI) 연구위원</span></div></li>
+    <li><span class="yr">2003–2012</span><div><span lang="en">Economist, Bank of Korea</span><span lang="ko">한국은행 조사역</span></div></li>
+  </ul>
+
+  <h3><span lang="en">Education</span><span lang="ko">학력</span></h3>
+  <ul class="list">
+    <li><span class="yr">2013</span><div><span lang="en">Ph.D. in Economics, University of Rochester</span><span lang="ko">University of Rochester 경제학 박사</span></div></li>
+    <li><span class="yr">2003</span><div><span lang="en">B.A. in Economics, Seoul National University</span><span lang="ko">서울대학교 경제학과 학사</span></div></li>
+  </ul>
+
+  <h3><span lang="en">Honors</span><span lang="ko">상훈</span></h3>
+  <ul class="list">
+    <li><span class="yr">2022</span><div><span lang="en">Commendation for Distinguished Service, Deputy Prime Minister and Minister of Economy and Finance</span><span lang="ko">경제부총리 업무유공 표창</span></div></li>
+    <li><span class="yr">2018</span><div><span lang="en">Commendation for Distinguished Service, Korea Development Institute</span><span lang="ko">한국개발연구원 업무유공 표창</span></div></li>
+    <li><span class="yr">2008</span><div><span lang="en">The Norman M. Kaplan Memorial Prize, University of Rochester</span><span lang="ko">The Norman M. Kaplan Memorial Prize, University of Rochester</span></div></li>
+  </ul>
+</section>
+
+<footer>
+  <span lang="en">Last updated September 2026</span><span lang="ko">2026년 9월 업데이트</span>
+</footer>
+
+</main>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var buttons = document.querySelectorAll('.lang button');
+    function setLang(l){
+      root.setAttribute('data-lang', l);
+      root.setAttribute('lang', l);
+      buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.set === l ? 'true' : 'false'); });
+      try { history.replaceState(null, '', l === 'ko' ? '#ko' : location.pathname); } catch(e){}
+    }
+    buttons.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.set); }); });
+    if (location.hash === '#ko') setLang('ko');
+  })();
+</script>
+</body>
+</html>
